@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="col-lg-4">
+    <a class="navbar-brand" href="#" id="titulo">Drinking Replenish</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+      aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarScroll">
+      <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mates</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Yerbas
+          </a>
+          <ul class="dropdown-menu">
+            <button id="menuProducto" mat-button [matMenuTriggerFor]="producto">Productos</button>
+            <mat-menu #producto="matMenu">
+              <button mat-menu-item routerLink="/producto">Yerbas</button>
+              <button mat-menu-item routerLink="/indumentaria">Yerbas Comunes</button>
+              <button mat-menu-item routerLink="/alimentacion">Yerbas Saborizadas</button>
+              <button mat-menu-item routerLink="/juguetes">Yerbas Despaladas</button>
+            </mat-menu>
+          </ul>
+        </li>
+      </ul>
+
+
+    </div>
+  </div>
+  <div class="col-lg-5">
+    <form class="d-flex" role="search">
+      <input class="form-control me-2" type="search" placeholder="Explorar..." aria-label="Search">
+      <button class="btn btn-outline-success" type="submit">Buscar</button>
+    </form>
+  </div>
+  <div class="col-lg-3">
+      <!--Label Para Modo Oscuro-->
+      <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
+      <input type="checkbox" id="toggle" (click)="cambiarFondo()">
+    <button mat-icon-button [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
+    <mat-menu #usuario="matMenu">
+      <button mat-menu-item (click)="iniciar()" *ngIf="logueado" routerLink="/registro">Registrarse</button>
+      <button mat-menu-item (click)="iniciar()" *ngIf="logueado" routerLink="/inicio-sesion">Iniciar sesión</button>
+      <button mat-menu-item (click)="cerrarSesion()" *ngIf="deslogueado">Cerrar Sesión</button>
+    </mat-menu>
+
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>shopping_cart</mat-icon>
+    </button>
+  </div>
+</nav>
