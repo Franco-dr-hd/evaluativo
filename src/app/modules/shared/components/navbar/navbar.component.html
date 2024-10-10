@@ -14,19 +14,14 @@
           <a class="nav-link" href="#">Mates</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-            Yerbas
-          </a>
-          <ul class="dropdown-menu">
-            <button id="menuProducto" mat-button [matMenuTriggerFor]="producto">Productos</button>
-            <mat-menu #producto="matMenu">
-              <button mat-menu-item routerLink="/producto">Yerbas</button>
-              <button mat-menu-item routerLink="/indumentaria">Yerbas Comunes</button>
-              <button mat-menu-item routerLink="/alimentacion">Yerbas Saborizadas</button>
-              <button mat-menu-item routerLink="/juguetes">Yerbas Despaladas</button>
-            </mat-menu>
-          </ul>
+          <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" mat-button [matMenuTriggerFor]="producto">Yerbas</a>
+          <mat-menu #producto="matMenu">
+            <button mat-menu-item routerLink="/Comunes">Yerbas Comunes</button>
+            <button mat-menu-item routerLink="/Saborizadas">Yerbas Saborizadas</button>
+            <button mat-menu-item routerLink="/Despaladas">Yerbas Despaladas</button>
+          </mat-menu>
         </li>
+        
       </ul>
 
 

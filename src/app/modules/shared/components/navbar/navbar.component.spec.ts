@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { createPopper } from '@popperjs/core';
 import { NavbarComponent } from './navbar.component';
 
 describe('NavbarComponent', () => {

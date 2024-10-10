@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { AuthService } from 'src/app/modules/autentificacion/services/auth.service';
 import { Router } from '@angular/router';
+import { createPopper } from '@popperjs/core';
+
 
 @Component({
   selector: 'app-navbar',
