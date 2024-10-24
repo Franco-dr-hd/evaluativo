@@ -16,11 +16,12 @@ const routes: Routes = [
     path:"",loadChildren:()=>import('./modules/inicio/inicio.module').then(m=>m.InicioModule)
   },
   {
-    path:"",loadChildren:()=>import('./modules/mates/mates.module').then(m=>m.MatesModule)
-  },
-  {
     path:"",loadChildren:()=>import('./modules/yerbas/yerbas.module').then(m=>m.YerbasModule)
   },
+  {
+    path:"",loadChildren:()=>import('./modules/mates/mates.module').then(m=>m.MatesModule)
+  },
+
   {
     path:"",loadChildren:()=>import('./modules/autentificacion/autentificacion.module').then(m=>m.AutentificacionModule)
   },

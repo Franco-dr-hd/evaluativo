@@ -1,16 +1,16 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { MateComponent } from './mate.component';
+import { YerbasComponent } from './yerbas.component';
 
-describe('MateComponent', () => {
-  let component: MateComponent;
-  let fixture: ComponentFixture<MateComponent>;
+describe('YerbasComponent', () => {
+  let component: YerbasComponent;
+  let fixture: ComponentFixture<YerbasComponent>;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MateComponent]
+      declarations: [YerbasComponent]
     });
-    fixture = TestBed.createComponent(MateComponent);
+    fixture = TestBed.createComponent(YerbasComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

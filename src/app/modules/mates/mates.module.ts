@@ -2,12 +2,12 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { MatesRoutingModule } from './mates-routing.module';
-import { MateComponent } from './Page/mate/mate.component';
+import { MatesComponent } from './pages/mates/mates.component';
 
 
 @NgModule({
   declarations: [
-    MateComponent
+    MatesComponent
   ],
   imports: [
     CommonModule,

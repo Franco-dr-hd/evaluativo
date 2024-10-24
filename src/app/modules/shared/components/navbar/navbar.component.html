@@ -8,10 +8,10 @@
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
         <li class="nav-item">
-          <a class="nav-link active" aria-current="page" routerLink="/inicio">Inicio</a>
+          <a class="nav-link active" aria-current="page" routerLink="/producto">Productos</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" routerLink="/Mates">Mates</a>
+          <a class="nav-link" routerLink="/mates">Mates</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" aria-expanded="false" mat-button
@@ -21,9 +21,7 @@
             <button mat-menu-item routerLink="/Saborizadas">Yerbas Saborizadas</button>
             <button mat-menu-item routerLink="/Despaladas">Yerbas Despaladas</button>
           </mat-menu>
-        </li>
-        <a class="nav-link active" aria-current="page" routerLink="">Acerca de nosotros</a>
-        <a class="nav-link active" aria-current="page" routerLink="">Contacto</a>
+        </li>  
       </ul>
 
 
@@ -35,7 +33,7 @@
       <button class="btn btn-outline-success" type="submit">Buscar</button>
     </form>
   </div>
-  <div class="col-lg-3">
+  <div class="col-lg-4">
     <!--Label Para Modo Oscuro-->
     <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
     <input type="checkbox" id="toggle" (click)="cambiarFondo()">

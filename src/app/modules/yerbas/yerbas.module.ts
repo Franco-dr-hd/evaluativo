@@ -6,6 +6,7 @@ import { SaborizadasComponent } from './pages/saborizadas/saborizadas.component'
 import { ComunesComponent } from './pages/comunes/comunes.component';
 import { DespaladasComponent } from './pages/despaladas/despaladas.component';
 import { GeneralComponent } from './general/general.component';
+import { YerbasComponent } from './pages/yerbas/yerbas.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { GeneralComponent } from './general/general.component';
     SaborizadasComponent,
     ComunesComponent,
     DespaladasComponent,
-    GeneralComponent
+    GeneralComponent,
+    YerbasComponent
   ],
   imports: [
     CommonModule,
