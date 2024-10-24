@@ -11,10 +11,20 @@
 .col-lg-4, .col-lg-3{
     display: flex;
     justify-content: center;
+    margin-right: 15px;
+  font-weight: bold;
+  transition: color 0.3s;
 }
 .label_toggle{
   display: none;
+  font-size: 1.1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #333;
 }
+
+  
 /* Declaramos con palabra reservada MEDIA -> DISPOSITIVOS PEQUEÑOS (ej.: celular) */
 @media (min-width: 300px) and (max-width: 700px) {
     mat-toolbar{
@@ -28,6 +38,7 @@
     #menuProducto{
         display: none;
     }
+    
 }
 
 /* DISPOSITIVOS MÁS GRANDES (ej.: computadora) */
