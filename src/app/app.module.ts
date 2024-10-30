@@ -13,7 +13,7 @@ import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire/compat'; // Es para el Cloud Firestore
 import { AngularFireAuthModule } from '@angular/fire/compat/auth'; // Es para la Autentificación
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
-import { CardComponent } from './modules/producto/card/card.component';
+import { CardComponent } from './modules/producto/components/card/card.component';
 
 /** 
  * npm install firebase --force

@@ -14,25 +14,25 @@ export class CardComponent {
   constructor(){
     this.info = [
       {
-        id: "",
-        nombre: "Chanchito",
-        edad: 5,
-        imagen: "https://i1.sndcdn.com/artworks-000190784980-i4qoly-t500x500.jpg",
-        alt: "Un chanchito"
+        id: "producto",
+        nombre: "Mate uruguayo con bombilla imperial",
+        edad: 50000,
+        imagen: "https://dcdn.mitiendanube.com/stores/001/666/155/products/m91-c9f1314c0365d7b27616246266979128-1024-1024.webp",
+        alt: "Mate uruguayo con bombilla imperial"
       },
       {
-        id: "",
-        nombre: "Caballo",
-        edad: 7,
-        imagen: "https://concepto.de/wp-content/uploads/2021/07/caballos-e1626738224231.jpg",
-        alt: "Un caballo"
+        id: "producto",
+        nombre: "Termo Stanley 1LTS",
+        edad: 114000,
+        imagen: "https://www.doiteargentina.com.ar/wp-content/uploads/2018/06/46715-TERMO-STANLEY-ADVENTURE-1LT-GREEN.jpg",
+        alt: "Termo Stanley de un litro"
       },
       {
-        id: "",
-        nombre: "Carpincho",
-        edad: 10,
-        imagen: "https://eraverde.com.ar/wp-content/uploads/2018/08/carpincho_roger.jpg",
-        alt: "Un carpincho"
+        id: "producto",
+        nombre: "Yerba Canarias 1kg Clasica",
+        edad: 10000,
+        imagen: "https://acdn.mitiendanube.com/stores/313/507/products/canarias-48af651472263d23f117060379255540-640-0.jpg",
+        alt: "Yerba Canarias de un kilo"
       }
     ]
   }

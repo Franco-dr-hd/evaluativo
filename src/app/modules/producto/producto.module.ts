@@ -9,14 +9,11 @@ import { ProductoRoutingModule } from './producto-routing.module';
 import { ProductoComponent } from './pages/producto/producto.component';
 // COMPONENTES LOCALES
 import { CardComponent } from './components/card/card.component';
-import { CarruselComponent } from './components/carrusel/carrusel.component';
+
 
 @NgModule({
   declarations: [
     ProductoComponent,
-    CardComponent,
-    CarruselComponent
-   
   ],
   imports: [
     CommonModule,
@@ -25,7 +22,6 @@ import { CarruselComponent } from './components/carrusel/carrusel.component';
   ],
   exports: [
     ProductoComponent,
-    CardComponent,
     MatTabsModule
   ]
 })
