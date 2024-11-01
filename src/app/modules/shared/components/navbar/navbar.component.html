@@ -1,8 +1,18 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<nav class="fondo-navbar">
   <div class="col-lg-4">
-    <img src="../../../../../assets/logo evalu.png" alt="logo" width="250px" height="150">    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+    <img src="../../../../../assets/logo evalu.png" alt="logo" class="logo">    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
       aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    
+<button class="btn">
+    <span class="icon">
+        <svg viewBox="0 0 175 80" width="40" height="40">
+            <rect width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+            <rect y="30" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+            <rect y="60" width="80" height="15" fill="#f0f0f0" rx="10"></rect>
+        </svg>
+    </span>
+    <span class="text">MENU</span>
+</button>
     </button>
     <div class="collapse navbar-collapse" id="navbarScroll">
       <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
@@ -25,32 +35,19 @@
     </div>
 
   </div>
-
-
-  <div class="col-lg-3">
-    <form class="d-flex" role="search">
-      <input class="form-control me-2" type="search" placeholder="Explorar..." aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Buscar</button>
-    </form>
-  </div>
-  <div class="col-lg-4">
-    <!--Label Para Modo Oscuro-->
-    <div class="container">
-      <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
-      <input type="checkbox" id="toggle" (click)="cambiarFondo()">
-    </div>
-    
-    <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
-    <input type="checkbox" id="toggle" (click)="cambiarFondo()">
+  <span class="example-spacer"></span>
+  <div class="col-lg-5">
+      <!--Label Para Modo Oscuro-->
+  <label for="toggle" id="label_toggle"><i class="fa-solid fa-moon"></i></label>
+  <input type="checkbox" id="toggle" (click)="cambiarFondo()">
     <button mat-icon-button [matMenuTriggerFor]="usuario"><mat-icon>person</mat-icon></button>
     <mat-menu #usuario="matMenu">
       <button mat-menu-item (click)="iniciar()" *ngIf="logueado" routerLink="/registro">Registrarse</button>
       <button mat-menu-item (click)="iniciar()" *ngIf="logueado" routerLink="/inicio-sesion">Iniciar sesión</button>
       <button mat-menu-item (click)="cerrarSesion()" *ngIf="deslogueado">Cerrar Sesión</button>
     </mat-menu>
-
     <button mat-icon-button class="example-icon favorite-icon" aria-label=">Example icon-button with heart icon">
       <mat-icon>shopping_cart</mat-icon>
-    </button>
+    </button> 
   </div>
 </nav>

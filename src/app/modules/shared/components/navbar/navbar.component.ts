@@ -1,8 +1,6 @@
 import { Component } from '@angular/core';
 import { AuthService } from 'src/app/modules/autentificacion/services/auth.service';
 import { Router } from '@angular/router';
-import { createPopper } from '@popperjs/core';
-
 
 @Component({
   selector: 'app-navbar',
@@ -33,6 +31,7 @@ export class NavbarComponent {
     this.servicioRutas.navigate(['/']); // redigirimos a la raíz de la página
     this.logueado = true;
   }
+  
   //Funcion Para Modo Oscuro
 
   cambiarFondo(){

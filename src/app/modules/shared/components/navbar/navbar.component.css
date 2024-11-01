@@ -1,117 +1,169 @@
 .example-spacer {
-    flex: 1 1 auto;
+  flex: 1 1 auto;
+}
+.nav-link{
+  color: #000000  ;
 }
 
 /*
-    1) Tomi: Permite crear e implementar diseños según el dispositivo que estás usando
-    2) Thiago: Técnica introducida por CSS3 para aplicar propiedades según condiciones V o F
-    3) Javi: Permite modificar la resolución de pantalla
-    4) More: Permite especificar la visualización de un documento para diferentes tamaños de pantalla
+  1) Tomi: Permite crear e implementar diseños según el dispositivo que estás usando
+  2) Thiago: Técnica introducida por CSS3 para aplicar propiedades según condiciones V o F
+  3) Javi: Permite modificar la resolución de pantalla
+  4) More: Permite especificar la visualización de un documento para diferentes tamaños de pantalla
 */
-.col-lg-4, .col-lg-3{
-    display: flex;
-    justify-content: center;
-    margin-right: 15px;
-  font-weight: bold;
-  transition: color 0.3s;
-}
-/* From Uiverse.io by Yaya12085 */ 
-.container {
 
-
-.label {
-  height: 60px;
-  width: 120px;
-  background-color: #ffffff;
-  border-radius: 30px;
-  -webkit-box-shadow: inset 0 0 5px 4px rgba(255, 255, 255, 1),
-    inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096),
-    inset 0 0 0 3px rgba(0, 0, 0, 0.3);
-  box-shadow: inset 0 0 5px 4px rgba(255, 255, 255, 1),
-    inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096),
-    inset 0 0 0 3px rgba(0, 0, 0, 0.3);
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  cursor: pointer;
-  position: relative;
-  -webkit-transition: -webkit-transform 0.4s;
-  transition: -webkit-transform 0.4s;
-  transition: transform 0.4s;
-}
-
-.label:hover {
-  -webkit-transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
-  transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
-}
-
-#checkbox:checked ~ .label:hover {
-  -webkit-transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
-  transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
-}
-
-#checkbox {
-  display: none;
-}
-
-#checkbox:checked ~ .label::before {
-  left: 70px;
-  background-color: #000000;
-  background-image: linear-gradient(315deg, #000000 0%, #414141 70%);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-
-.label::before {
-  position: absolute;
-  content: "";
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  background-color: #000000;
-  background-image: linear-gradient(
-    130deg,
-    #757272 10%,
-    #ffffff 11%,
-    #726f6f 62%
-  );
-  left: 10px;
-  -webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3),
-    10px 10px 10px rgba(0, 0, 0, 0.3);
-  box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-}
-}
-
-
-  
 /* Declaramos con palabra reservada MEDIA -> DISPOSITIVOS PEQUEÑOS (ej.: celular) */
 @media (min-width: 300px) and (max-width: 700px) {
-    mat-toolbar{
-        background-color: pink;
-    }
+  mat-toolbar{
+      background-color: pink;
+  }
 
-    #menuInicio{
-        display: none;
-    }
+  #menuInicio{
+      display: none;
+  }
 
-    #menuProducto{
-        display: none;
-    }
-    
+  #menuProducto{
+      display: none;
+  }
+
+  .logo{
+    width: 5rem; height: 5rem;
+  }
 }
 
 /* DISPOSITIVOS MÁS GRANDES (ej.: computadora) */
 @media (min-width: 700px) {
-    mat-toolbar{
-        background-color: rgb(118, 118, 255);
-    }
+  mat-toolbar{
+      background-color: rgb(118, 118, 255);
+  }
 
-    #menuSecciones{
-        display: none;
-    }
+  #menuSecciones{
+      display: none;
+  }
+
+  .logo{
+    width: 5rem; height: 5rem;
+  } 
+}
+
+.label_toggle {
+height: 50px;
+width: 80px;
+background-color: #ffffff;
+border-radius: 30px;
+-webkit-box-shadow: inset 0 0 5px 4px rgba(255, 255, 255, 1),
+  inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096),
+  inset 0 0 0 3px rgba(0, 0, 0, 0.3);
+box-shadow: inset 0 0 5px 4px rgba(255, 255, 255, 1),
+  inset 0 0 20px 1px rgba(0, 0, 0, 0.488), 10px 20px 30px rgba(0, 0, 0, 0.096),
+  inset 0 0 0 3px rgba(0, 0, 0, 0.3);
+display: -webkit-box;
+display: -ms-flexbox;
+display: flex;
+-webkit-box-align: center;
+-ms-flex-align: center;
+align-items: center;
+cursor: pointer;
+position: relative;
+-webkit-transition: -webkit-transform 0.4s;
+transition: -webkit-transform 0.4s;
+transition: transform 0.4s;
+}
+
+.label_toggle {
+-webkit-transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+transform: perspective(100px) rotateX(5deg) rotateY(-5deg);
+}
+
+.label_toggle {
+-webkit-transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+transform: perspective(100px) rotateX(-5deg) rotateY(5deg);
+}
+
+.label_toggle {
+display: none;
+}
+
+.label_toggle {
+left: 70px;
+background-color: #000000;
+background-image: linear-gradient(315deg, #000000 0%, #414141 70%);
+-webkit-transition: 0.4s;
+transition: 0.4s;
+}
+
+.label_toggle {
+position: absolute;
+content: "";
+height: 30px;
+width: 40px;
+border-radius: 50%;
+background-color: #000000;
+background-image: linear-gradient(
+  130deg,
+  #757272 10%,
+  #ffffff 11%,
+  #726f6f 62%
+);
+left: 10px;
+-webkit-box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3),
+  10px 10px 10px rgba(0, 0, 0, 0.3);
+box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3), 10px 10px 10px rgba(0, 0, 0, 0.3);
+-webkit-transition: 0.4s;
+transition: 0.4s;
+}
+
+.fondo-navbar{
+  background-color: #525252;
+}
+
+/* From Uiverse.io by gagan-gv */ 
+.btn {
+  width: 150px;
+  height: 50px;
+  border-radius: 1rem;
+  border: none;
+  transition: all 0.5s ease-in-out;
+  font-size: 1rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  background: #040f16;
+  color: #f5f5f5;
+}
+
+.btn:hover {
+  box-shadow: 0 0 20px 0px #2e2e2e3a;
+}
+
+.btn .icon {
+  position: absolute;
+  height: 40px;
+  width: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+
+.btn .text {
+  transform: translateX(55px);
+}
+
+.btn:hover .icon {
+  width: 175px;
+}
+
+.btn:hover .text {
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.btn:active .icon {
+  transform: scale(0.85);
 }
