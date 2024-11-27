@@ -13,11 +13,13 @@ import { MatMenuModule } from '@angular/material/menu';
 
 // RUTAS GENERALES DE TODOS LOS MÓDULOS
 import { AppRoutingModule } from 'src/app/app-routing.module';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
 
 @NgModule({
   declarations: [
     NavbarComponent,
-    FooterComponent
+    FooterComponent,
+    CarruselComponent
   ],
   imports: [
     CommonModule,

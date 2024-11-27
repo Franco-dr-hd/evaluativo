@@ -134,7 +134,7 @@ transition: 0.4s;
 }
 
 .btn:hover {
-  box-shadow: 0 0 20px 0px #2e2e2e3a;
+  box-shadow: 0 0 20px 0px #00ff3c3a;
 }
 
 .btn .icon {

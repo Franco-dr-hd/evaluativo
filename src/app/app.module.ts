@@ -14,6 +14,7 @@ import { AngularFireModule } from '@angular/fire/compat'; // Es para el Cloud Fi
 import { AngularFireAuthModule } from '@angular/fire/compat/auth'; // Es para la Autentificación
 import { AngularFireStorageModule } from '@angular/fire/compat/storage';
 import { CardComponent } from './modules/producto/components/card/card.component';
+import { CarruselComponent } from './components/carrusel/carrusel.component';
 
 /** 
  * npm install firebase --force
@@ -23,7 +24,8 @@ import { CardComponent } from './modules/producto/components/card/card.component
 @NgModule({
   declarations: [
     AppComponent,
-    CardComponent
+    CardComponent,
+    CarruselComponent
   ],
   imports: [
     BrowserModule,
